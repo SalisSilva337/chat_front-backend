@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Live</title>
+    <script src="http://localhost:3000/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="divAll">
+        <div id="login-container">
+            <label for="">Nickname:</label>
+            <input type="text" placeholder="Type Here..." id="name-input">
+            <button id="login-button">Join</button>
+        </div>
+        <div id="message-container"></div>
+    </div>
+    <div id="users-container">
+        <h2 id="users-count">Users Connected: </h2>
+    </div>
+    <footer>
+        <form id="send-container">
+            <input type="text" id="message-input" placeholder="Type here your message..." disabled>
+            <button type="submit" id="send-button" hidden>Send</button>
+        </form>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Bahnschrift;
+}
+
+body{
+    overflow: hidden;
+    background: url(imgs/img.jpg) ;
+    background-size: 200%;
+    animation: backgroundAnim 200s infinite alternate;
+}
+
+@keyframes backgroundAnim {
+    from {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}
+
+#divAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 440px;
+    
+}
+
+#login-container{
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0,0.3);
+    display: flex;
+    position: absolute;
+    background-color: rgb(53, 23, 72);
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+#name-input{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#login-button{
+    border-radius: 100px;
+    width: 50px;
+    height: 20px;
+    border: 0px;
+    background-color: blue;
+    color: white;
+}
+
+#login-button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+#users-container{
+    position: absolute;
+    color: white;
+}
+#message-container{
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    gap: 10px;
+}
+
+#messageElement{
+    border: 1px solid blue;
+    background-color: black;
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#messageDisconnectedElement{
+    border: 1px solid blue;
+    background-color: rgb(255, 0, 0);
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#messageConnectedElement{
+    border: 1px solid blue;
+    background-color: rgb(65, 194, 5);
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#messageSelfElement{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(97, 56, 179);
+    margin-left: auto;
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#send-container{
+    width: 100%;
+    height: 200px;
+    box-shadow: 1px 1px 10px rgba(64, 0, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(18, 16, 53);
+}
+
+
+
+#message-input{
+    width: 1000px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: large;
+    padding: 10px;
+    border: 1px solid;
+}
+
+#send-button{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    background-color: blue;
+    color: white;
+}
+
+#send-button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
